@@ -9,12 +9,12 @@ function decrypt {
 
 decrypt "india.tfvars"
 
-FILES=$(ls terraform.tfstate* | grep -v \.gpg)
+FILES=$(ls terraform.tfstate*gpg)
 for f in $FILES; do
-    decrypt $f
+    decrypt $( echo $f | sed 's/\.gpg//' )
 done
 
-FILES=$(ls ssh/oracle* | grep -v \.gpg)
+FILES=$(ls ssh/oracle*.gpg)
 for f in $FILES; do
-    decrypt $f
+    decrypt $( echo $f | sed 's/\.gpg//' )
 done
