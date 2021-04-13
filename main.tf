@@ -50,4 +50,8 @@ resource "oci_core_instance" "free" {
     source_type             = "image"
     source_id               = var.image_id
   }
+
+  freeform_tags = {
+    "openvpn_service" = "yes"
+  }
 }
