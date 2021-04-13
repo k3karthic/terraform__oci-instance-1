@@ -53,5 +53,6 @@ resource "oci_core_instance" "free" {
 
   freeform_tags = {
     "openvpn_service" = "yes"
+    "os" = "ubuntu"
   }
 }
