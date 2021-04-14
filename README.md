@@ -42,7 +42,7 @@ Run the verified plan
 
 ## Encryption
 
-Sensitive files like the input variables (india.tfvars) and Terraform state files are encrypted before being stored in the repository.
+Sensitive files like the input variables (india.tfvars) and Terraform state files are encrypted before being stored in the repository. The unencrypted file paths must be added to .gitignore.
 
 Use the following command to decrypt the files after cloning the repository,
 
