@@ -3,6 +3,7 @@ variable "compartment" {}
 variable "vcn_id" {}
 variable "subnet_id" {}
 variable "image_id" {}
+variable "ydns_host" {}
 
 provider "oci" {}
 
@@ -54,5 +55,6 @@ resource "oci_core_instance" "free" {
   freeform_tags = {
     "openvpn_service" = "yes"
     "os" = "ubuntu"
+    "ydns_host" = var.ydns_host
   }
 }
