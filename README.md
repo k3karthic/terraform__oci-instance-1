@@ -2,7 +2,7 @@
 
 Deploy a single instance in the Oracle Cloud which can be run in the [Always Free](https://www.oracle.com/cloud/free/#always-free) tier.
 
-For more control over network security, deploy the instance into a custom [Virtual Cloud Network](https://github.com/k3karthic/terraform__oci-vcn).
+For more control over network security, deploy the instance into a custom Virtual Cloud Network using the Terraform script at [https://github.com/k3karthic/terraform__oci-vcn](https://github.com/k3karthic/terraform__oci-vcn).
 
 ## Input Variables
 
