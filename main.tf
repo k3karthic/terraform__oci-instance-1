@@ -29,6 +29,23 @@ resource "oci_core_network_security_group_security_rule" "ssh" {
   }
 }
 
+resource "oci_core_network_security_group_security_rule" "openvpn" {
+  network_security_group_id = oci_core_network_security_group.free.id
+
+  direction = "INGRESS"
+  protocol  = 17 # UDP
+
+  source      = "0.0.0.0/0"
+  source_type = "CIDR_BLOCK"
+
+  udp_options {
+    destination_port_range {
+      min = 1194
+      max = 1194
+    }
+  }
+}
+
 resource "oci_core_instance" "free" {
   availability_domain = var.ad
   compartment_id      = var.compartment
