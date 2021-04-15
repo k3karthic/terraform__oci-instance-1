@@ -1,6 +1,12 @@
 ad          = "cBrC:AP-HYDERABAD-1-AD-1"
 compartment = "ocid1.tenancy.oc1..XXX"
-vcn_id      = "ocid1.vcn.oc1.ap-XXX.XXX"
-subnet_id   = "ocid1.subnet.oc1.ap-XXX.XXX"
-image_id    = "ocid1.image.oc1.ap-XXX.XXX"
-ydns_host   = "XXX.ydns.eu"
+
+hostname = "free1"
+
+vcn_id    = "ocid1.vcn.oc1.ap-XXX.XXX"
+subnet_id = "ocid1.subnet.oc1.ap-XXX.XXX"
+
+image_os = "ubuntu"
+image_id = "ocid1.image.oc1.ap-XXX.XXX"
+
+ydns_host = "XXX.ydns.eu"
