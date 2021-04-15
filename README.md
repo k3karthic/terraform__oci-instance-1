@@ -4,6 +4,8 @@ Deploy a single instance in the Oracle Cloud which can be run in the [Always Fre
 
 For more control over network security, deploy the instance into a custom Virtual Cloud Network using the Terraform script at [https://github.com/k3karthic/terraform__oci-vcn](https://github.com/k3karthic/terraform__oci-vcn).
 
+For basic setup (swap, fail2ban), use the Ansible playbook at [https://github.com/k3karthic/ansible__ubuntu-basic](https://github.com/k3karthic/ansible__ubuntu-basic).
+
 ## Input Variables
 
 Create a file to store the input variables using the sample file `india.tfvars.sample`. The file should be called `india.tfvars` or edit `bin/plan.sh` with the appropriate file name.
@@ -42,7 +44,9 @@ Run the verified plan
 
 ## Encryption
 
-Sensitive files like the input variables (india.tfvars) and Terraform state files are encrypted before being stored in the repository. The unencrypted file paths must be added to .gitignore.
+Sensitive files like the input variables (india.tfvars) and Terraform state files are encrypted before being stored in the repository.
+
+The unencrypted file paths must be added to `.gitignore`.
 
 Use the following command to decrypt the files after cloning the repository,
 
