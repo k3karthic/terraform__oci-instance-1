@@ -20,7 +20,7 @@ Create a Terraform plan by running plan.sh; the script will read input variables
 ./bin/plan.sh
 ```
 
-To avoid fetching the latest state of resources from OCI, run the following command
+To avoid fetching the latest state of resources from OCI, run the following command.
 
 ```
 ./bin/plan.sh --refresh=false
@@ -46,7 +46,7 @@ Run the verified plan
 
 Sensitive files like the input variables (india.tfvars) and Terraform state files are encrypted before being stored in the repository.
 
-The unencrypted file paths must be added to `.gitignore`.
+You must add the unencrypted file paths to `.gitignore`.
 
 Use the following command to decrypt the files after cloning the repository,
 
