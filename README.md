@@ -1,10 +1,10 @@
-# Terraform - Deploy a single instance on Oracle Cloud
+# Terraform - Deploy a single instance in Oracle Cloud
 
-Deploy a single instance on Oracle Cloud running in the [Always Free](https://www.oracle.com/cloud/free/#always-free) tier.
+Deploy a single instance in Oracle Cloud running under the [Always Free](https://www.oracle.com/cloud/free/#always-free) tier.
 
 For more control over network security, deploy the instance into a custom Virtual Cloud Network using the Terraform script at [https://github.com/k3karthic/terraform__oci-vcn](https://github.com/k3karthic/terraform__oci-vcn).
 
-For basic setup (swap, fail2ban), use the Ansible playbook at [https://github.com/k3karthic/ansible__ubuntu-basic](https://github.com/k3karthic/ansible__ubuntu-basic).
+For basic setup (e.g. swap, fail2ban), use the Ansible playbook at [https://github.com/k3karthic/ansible__ubuntu-basic](https://github.com/k3karthic/ansible__ubuntu-basic).
 
 ## Input Variables
 
