@@ -24,10 +24,17 @@ You can get a free hostname for the instance using the Ansible playbook below,
 
 ## Configuration
 
-Create a file to store the [Terraform input variables](https://www.terraform.io/docs/language/values/variables.html). Use `india.tfvars.sample` as a reference. Keep `india.tfvars` as the filename or change the name in the following files,
+**Step 1:** Create a file to store the [Terraform input variables](https://www.terraform.io/docs/language/values/variables.html). Use `india.tfvars.sample` as a reference. Keep `india.tfvars` as the filename or change the name in the following files,
+    1. `.gitignore`
+    1. `bin/plan.sh`
+    
+**Step 2:** Set `ad` to the desired Availability Domain. Oracle Cloud Infrastructure randomizes the availability domains by tenancy to help balance capacity in the data centers. To get the specific names of your account, use the [ListAvailabilityDomains](https://docs.oracle.com/iaas/api/#/en/identity/latest/AvailabilityDomain/ListAvailabilityDomains) IAM API. You can also see the names when you use the Console to launch an instance and choose which availability domain to launch the instance in.
 
-1. `.gitignore`
-1. `bin/plan.sh`
+**Step 3:** Set `compartment` to the desired value. List of compartments in your Oracle Cloud account are at [cloud.oracle.com/identity/compartments](https://cloud.oracle.com/identity/compartments).
+
+![compartment list screenshot](resources/compartment.png)
+
+**Step 4:** Set `vcn_id` to the desired Virtual Cloud Network ID. Set `subnet_id` to the desired Subnet ID.
 
 ## Authentication
 
@@ -56,6 +63,15 @@ $ ./bin/view.sh
 ```
 $ ./bin/apply.sh
 ```
+
+**Step 4:** Use the follwing command to display the instance,
+```
+$ terraform show oci_core_instance.free
+```
+
+![terraform instance part 1](resources/instance_1.png)
+![terraform instance part 2](resources/instance_2.png)
+![terraform instance part 3](resources/instance_3.png)
 
 ## Encryption
 
