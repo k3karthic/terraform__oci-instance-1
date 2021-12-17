@@ -37,6 +37,12 @@ You can get a free hostname for the instance using the Ansible playbook below,
 
 **Step 4:** Set `vcn_id` to the desired VCN ID. Set `subnet_id` to the desired Subnet ID.
 
+**Step 5:** Choose a `shape` from the following two choices,
+* `VM.Standard.A1.Flex`— Ampere ARM A1
+* `VM.Standard.E2.1.Micro` — AMD EPYC 7551
+
+**Step 6:** Choose an `image_id` from [docs.oracle.com/en-us/iaas/images](https://docs.oracle.com/en-us/iaas/images/). For Ampere, use aarch64 images.
+
 ## Authentication
 
 [Oracle provider](https://registry.terraform.io/providers/hashicorp/oci/latest) documentation is at [registry.terraform.io/providers/hashicorp/oci/latest](https://registry.terraform.io/providers/hashicorp/oci/latest).
