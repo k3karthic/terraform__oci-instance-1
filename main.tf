@@ -14,6 +14,8 @@ variable "image_id" {}
 variable "image_os" {}
 
 variable "shape" {}
+variable "flex_memory_in_gbs" {}
+variable "flex_ocpus" {}
 
 variable "ydns_host" {}
 
@@ -63,8 +65,8 @@ resource "oci_core_instance" "free" {
   shape_config {
     // If shape name contains ".Flex" and instance_flex inputs are not null, use instance_flex inputs values for shape_config block
     // Else use values from data.oci_core_shapes.ad1 for var.shape
-    memory_in_gbs = local.shape_is_flex == true ? local.shapes_config[var.shape]["memory_in_gbs"] : null
-    ocpus         = local.shape_is_flex == true ? local.shapes_config[var.shape]["ocpus"] : null
+    memory_in_gbs = local.shape_is_flex == true ? var.flex_memory_in_gbs : local.shapes_config[var.shape]["memory_in_gbs"]
+    ocpus         = local.shape_is_flex == true ? var.flex_ocpus : local.shapes_config[var.shape]["ocpus"]
   }
 
   create_vnic_details {
