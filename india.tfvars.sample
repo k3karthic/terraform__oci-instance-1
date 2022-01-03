@@ -10,5 +10,11 @@ image_os = "ubuntu"
 image_id = "ocid1.image.oc1.ap-XXX.XXX"
 
 shape  = "VM.Standard.E2.1.Micro"
+flex_memory_in_gbs = 0
+flex_ocpus = 0
+
+# shape = "VM.Standard.A1.Flex"
+# flex_memory_in_gbs = 4
+# flex_ocpus = 24
 
 ydns_host = "XXX.ydns.eu"
