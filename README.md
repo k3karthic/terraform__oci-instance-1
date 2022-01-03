@@ -41,7 +41,11 @@ You can get a free hostname for the instance using the Ansible playbook below,
 * `VM.Standard.A1.Flex`— Ampere ARM A1
 * `VM.Standard.E2.1.Micro` — AMD EPYC 7551
 
-**Step 6:** Choose an `image_id` from [docs.oracle.com/en-us/iaas/images](https://docs.oracle.com/en-us/iaas/images/). For Ampere, use aarch64 images.
+**Step 6:** Choose an appropriate amount of cpu and memory based on the `shape`,
+* `VM.Standard.A1.Flex`— Set `flex_ocpus` between 1 and 4. Set `flex_memory_in_gbs` between 1 and 24.
+* `VM.Standard.E2.1.Micro` — Set `flex_ocpus` and `flex_memory_in_gbs` to `0`. Terraform will use the default value of the `shape`.
+
+**Step 7:** Choose an `image_id` from [docs.oracle.com/en-us/iaas/images](https://docs.oracle.com/en-us/iaas/images/). For `VM.Standard.A1.Flex`, use aarch64 images.
 
 ## Authentication
 
