@@ -14,7 +14,7 @@ flex_memory_in_gbs = 0
 flex_ocpus = 0
 
 # shape = "VM.Standard.A1.Flex"
-# flex_memory_in_gbs = 4
-# flex_ocpus = 24
+# flex_memory_in_gbs = 24
+# flex_ocpus = 4
 
 ydns_host = "XXX.ydns.eu"
