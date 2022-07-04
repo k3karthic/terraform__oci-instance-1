@@ -18,3 +18,5 @@ flex_ocpus = 0
 # flex_ocpus = 4
 
 ydns_host = "XXX.ydns.eu"
+njalla_domain = "XXXX"
+njalla_domain_id = "<id>"
