@@ -17,6 +17,11 @@ You can get a free hostname for the instance using the Ansible playbook below,
 	* GitHub: [github.com/k3karthic/ansible__oci-ydns](https://github.com/k3karthic/ansible__oci-ydns)
 	* Codeberg: [codeberg.org/k3karthic/ansible__oci-ydns](https://codeberg.org/k3karthic/ansible__oci-ydns)
 
+Use a [Njalla](https://njal.la/) hostname for the instance using the Ansible playbook below,
+* ansible__oci-njalla-dns
+	* GitHub: [github.com/k3karthic/ansible__oci-njalla-dns](https://github.com/k3karthic/ansible__oci-njalla-dns)
+	* Codeberg: [codeberg.org/k3karthic/ansible__oci-njalla-dns](https://codeberg.org/k3karthic/ansible__oci-njalla-dns)
+
 ## Code Mirrors
 
 * GitHub: [github.com/k3karthic/terraform__oci-instance-1](https://github.com/k3karthic/terraform__oci-instance-1/)
