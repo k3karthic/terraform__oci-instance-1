@@ -2,8 +2,8 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/oci" {
-  version = "4.81.0"
+  version = "4.117.0"
   hashes = [
-    "h1:HamENANCshU8fpKYjW+Y5bBOM0QAFD6hNwRCaNtmyZQ=",
+    "h1:cZt7fRGopK+DuIGeSlpvOsbGVNFYQCax20iOvmOWHAU=",
   ]
 }

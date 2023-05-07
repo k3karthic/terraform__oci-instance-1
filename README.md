@@ -12,11 +12,6 @@ The following Ansible playbook covers basic setup for Ubuntu (e.g, swap, fail2ba
 	* GitHub: [github.com/k3karthic/ansible__ubuntu-basic](https://github.com/k3karthic/ansible__ubuntu-basic)
 	* Codeberg: [codeberg.org/k3karthic/ansible__ubuntu-basic](https://codeberg.org/k3karthic/ansible__ubuntu-basic)
 
-You can get a free hostname for the instance using the Ansible playbook below,
-* ansible__oci-ydns
-	* GitHub: [github.com/k3karthic/ansible__oci-ydns](https://github.com/k3karthic/ansible__oci-ydns)
-	* Codeberg: [codeberg.org/k3karthic/ansible__oci-ydns](https://codeberg.org/k3karthic/ansible__oci-ydns)
-
 Use a [Njalla](https://njal.la/) hostname for the instance using the Ansible playbook below,
 * ansible__oci-njalla-dns
 	* GitHub: [github.com/k3karthic/ansible__oci-njalla-dns](https://github.com/k3karthic/ansible__oci-njalla-dns)
@@ -51,6 +46,8 @@ Use a [Njalla](https://njal.la/) hostname for the instance using the Ansible pla
 * `VM.Standard.E2.1.Micro` — Set `flex_ocpus` and `flex_memory_in_gbs` to `0`. Terraform will use the default value of the `shape`.
 
 **Step 7:** Choose an `image_id` from [docs.oracle.com/en-us/iaas/images](https://docs.oracle.com/en-us/iaas/images/). For `VM.Standard.A1.Flex`, use aarch64 images.
+
+**Step 8:** Create a hostname in Njalla and update the same in `njalla_domain` and `njalla_domain_id`.
 
 ## Authentication
 
