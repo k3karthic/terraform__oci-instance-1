@@ -24,7 +24,11 @@ variable "njalla_domain_id" {}
  * Providers
  */
 
-provider "oci" {}
+provider "oci" {
+  auth = "SecurityToken"
+  config_file_profile = "DEFAULT"
+  region = "ap-hyderabad-1"
+}
 
 /*
  * Fetch Shape Configurations
