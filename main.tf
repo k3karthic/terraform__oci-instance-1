@@ -83,7 +83,7 @@ resource "oci_core_instance" "free" {
   }
 
   freeform_tags = {
-    "openvpn_service"  = "yes"
+    "tailscale_service"  = "yes"
     "os"               = var.image_os
 	"njalla_domain"    = var.njalla_domain
 	"njalla_domain_id" = var.njalla_domain_id
