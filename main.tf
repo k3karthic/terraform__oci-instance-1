@@ -25,8 +25,6 @@ variable "njalla_domain_id" {}
  */
 
 provider "oci" {
-  auth = "SecurityToken"
-  config_file_profile = "DEFAULT"
   region = "ap-hyderabad-1"
 }
 
